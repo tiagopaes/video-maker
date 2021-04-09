@@ -1,0 +1,124 @@
+[
+	{
+		"id": "68290",
+		"slug": "neymar",
+		"url": "https://www.transfermarkt.com/neymar/profil/spieler/68290",
+		"personal_info": {
+			"name": "Neymar",
+			"image": "https://img.a.transfermarkt.technology/portrait/header/68290-1602849593.jpg?lm=1",
+			"birth_date": "Feb 5, 1992",
+			"age": "29",
+			"country": "Brazil",
+			"height": "1,75 m",
+			"market_value": "€128.00m",
+			"current_club": "Paris SG",
+			"position": "Left Winger",
+			"most_games_for": null
+		},
+		"international_career": {
+			"matches": 103,
+			"goals": 64,
+			"goals_average": 0.62,
+			"assists": 43,
+			"assists_average": 0.42,
+			"yellow_cards": 23,
+			"red_cards": 1
+		},
+		"national_leagues_career": {
+			"matches": 291,
+			"goals": 175,
+			"goals_average": 0.6,
+			"assists": 108,
+			"assists_average": 0.37,
+			"yellow_cards": 68,
+			"red_cards": 3
+		},
+		"champions_league_career": {
+			"matches": 66,
+			"goals": 41,
+			"goals_average": 0.62,
+			"assists": 31,
+			"assists_average": 0.47,
+			"yellow_cards": 18,
+			"red_cards": 0
+		},
+		"total_career": {
+			"matches": 529,
+			"goals": 322,
+			"assists": 203,
+			"yellow_cards": 135,
+			"red_cards": 4,
+			"goals_average": 0.61,
+			"assists_average": 0.38
+		},
+		"achievements": {
+			"top_scorer": 3,
+			"champions_league": 1,
+			"fifa_world_cup": 0,
+			"fifa_ballon_dor": 0,
+			"golden_boot": 0,
+			"fifa_the_best": 0
+		}
+	},
+	{
+		"id": "125781",
+		"slug": "antoine-griezmann",
+		"url": "https://www.transfermarkt.com/antoine-griezmann/profil/spieler/125781",
+		"personal_info": {
+			"name": "Antoine Griezmann",
+			"image": "https://img.a.transfermarkt.technology/portrait/header/125781-1564143733.jpg?lm=1",
+			"birth_date": "Mar 21, 1991",
+			"age": "30",
+			"country": "France",
+			"height": "1,76 m",
+			"market_value": "€60.00m",
+			"current_club": "FC Barcelona",
+			"position": "Second Striker",
+			"most_games_for": null
+		},
+		"international_career": {
+			"matches": 89,
+			"goals": 35,
+			"goals_average": 0.39,
+			"assists": 27,
+			"assists_average": 0.3,
+			"yellow_cards": 5,
+			"red_cards": 0
+		},
+		"national_leagues_career": {
+			"matches": 422,
+			"goals": 157,
+			"goals_average": 0.37,
+			"assists": 60,
+			"assists_average": 0.14,
+			"yellow_cards": 61,
+			"red_cards": 1
+		},
+		"champions_league_career": {
+			"matches": 70,
+			"goals": 25,
+			"goals_average": 0.36,
+			"assists": 7,
+			"assists_average": 0.1,
+			"yellow_cards": 8,
+			"red_cards": 0
+		},
+		"total_career": {
+			"matches": 637,
+			"goals": 249,
+			"assists": 110,
+			"yellow_cards": 79,
+			"red_cards": 1,
+			"goals_average": 0.39,
+			"assists_average": 0.17
+		},
+		"achievements": {
+			"top_scorer": 1,
+			"champions_league": 0,
+			"fifa_world_cup": 1,
+			"fifa_ballon_dor": 0,
+			"golden_boot": 0,
+			"fifa_the_best": 0
+		}
+	}
+]
