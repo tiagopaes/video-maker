@@ -31,7 +31,7 @@ jobs:
           node-version: '14'
       - run: sudo apt update
       - run: sudo apt install ffmpeg
-      - run: npm install
+      - run: npm install && cd remotion-video && npm install && cd ..
       - run: npm start -- --firstPlayerUrl="${{github.event.inputs.firstPlayerUrl}}" --secondPlayerUrl="${{github.event.inputs.secondPlayerUrl}}"
       - uses: actions/upload-artifact@v2
         with:
