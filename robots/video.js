@@ -3,17 +3,19 @@ const { execSync } = require('child_process');
 
 function robot(players) {
   const contentFilePath =
-    __dirname + '/../remotion-video/src/assets/players-data.json';
+    __dirname + '/../remotion-video/.data/players-data.json';
   fs.writeFileSync(contentFilePath, JSON.stringify(players));
 
-  execSync('npm run build', {
-    cwd: __dirname + '/../remotion-video',
+  const remotionPath = __dirname + '/../remotion-video';
+
+  execSync(`npm run build -- --props='${JSON.stringify({ players })}'`, {
+    cwd: remotionPath,
     stdio: 'inherit',
   });
 
-  const fileName = `${players[0].slug}-vs-${players[1].slug}.mp4`;
-  execSync(`mv output.mp4 ${fileName}`, {
-    cwd: __dirname + '/../dist',
+  const fileName = `./../dist/${players[0].slug}-vs-${players[1].slug}.mp4`;
+  execSync(`cp out.mp4 ${fileName}`, {
+    cwd: remotionPath,
     stdio: 'inherit',
   });
 }
