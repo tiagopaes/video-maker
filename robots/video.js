@@ -13,6 +13,8 @@ function robot(players) {
     cwd: remotionPath,
     stdio: 'inherit',
   });
+
+  execSync('rm out.mp4', { cwd: remotionPath, stdio: 'inherit' });
 }
 
 module.exports = robot;

@@ -82,7 +82,7 @@ async function robot(url) {
   console.log('> Done.');
 
   console.log('> Fetching internation career info...');
-  await page.click('#national-team a');
+  await page.goto(`${host}/${player.slug}/nationalmannschaft/spieler/${player.id}`);
   await page.waitForSelector('tfoot tr td', { visible: true });
   player.international_career = await page.evaluate(() => {
     const tds = document.querySelectorAll('tfoot tr td');
@@ -177,12 +177,12 @@ async function robot(url) {
   player.total_career = await page.evaluate(() => {
     const tds = document.querySelectorAll('tfoot tr td');
     const matches = Number(tds[4].innerText.replace('-', ''));
-    const goals = Number(tds[6].innerText.replace('-', ''));
-    const assists = Number(tds[7].innerText.replace('-', ''));
+    const goals = Number(tds[5].innerText.replace('-', ''));
+    const assists = Number(tds[6].innerText.replace('-', ''));
     const yellow_cards = Number(
-      tds[8].innerText.split('/')[0].replace('-', '')
+      tds[7].innerText.split('/')[0].replace('-', '')
     );
-    const red_cards = Number(tds[8].innerText.split('/')[2].replace('-', ''));
+    const red_cards = Number(tds[7].innerText.split('/')[2].replace('-', ''));
 
     return {
       matches,
